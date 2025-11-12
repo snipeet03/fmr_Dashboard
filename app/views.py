@@ -175,4 +175,4 @@ def startup_view(request):
         response['Content-Disposition'] = f'attachment; filename={filename}'
         return response
 
-    return render(request, 'home.html', context)
+    return render(request, 'app/home.html', context)
