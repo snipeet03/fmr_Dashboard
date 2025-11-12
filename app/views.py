@@ -1,4 +1,4 @@
-    from django.shortcuts import render
+from django.shortcuts import render
 from django.http import HttpResponse
 import pandas as pd
 from datetime import datetime, timedelta
@@ -175,4 +175,4 @@ def startup_view(request):
         response['Content-Disposition'] = f'attachment; filename={filename}'
         return response
 
-    return render(request, 'fmr_project/home.html', context)
+    return render(request, 'home.html', context)
